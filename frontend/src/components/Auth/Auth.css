@@ -1,0 +1,106 @@
+/* Container Styling */
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sign-up-form {
+  background: #ffffff;
+  border-top: 8px solid #4668c7; /* Primary color */
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Heading */
+.sign-up-form h2 {
+  margin-bottom: 20px;
+  color: #4c6faf;
+}
+
+/* Form Group Styling */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+  /* border: 2px solid red; */
+}
+
+.form-group input:focus {
+  border-color: #534caf;
+  background: #fff;
+}
+
+/* Animated Label */
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #757575;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: 0px !important;
+  font-size: small;
+  font-weight:bold ;
+  color: #cfcfcf;
+  background: #ffffff;
+  /* border: 2px solid red; */
+  padding: 0 5px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #6186eb;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Login Link */
+.sign-up-form p a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-up-form p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .sign-up-form {
+    padding: 20px;
+  }
+}

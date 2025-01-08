@@ -1,0 +1,35 @@
+.sec4{
+  background-color: #f4f7fc;
+  border-radius: 20px;
+  padding:100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Card Title Styling */
+.report-custom-card{
+  border: 2px solid ;
+}
+.report-custom-card-title {
+  font-size: 1.1rem;
+  color: #212121;
+  font-weight: bold;
+}
+
+/* Card Value Styling */
+.report-custom-card-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1976D2; /* You can customize this color for the values */
+}
+
+/* For small screens, you can use a custom media query */
+@media (max-width: 768px) {
+  .report-custom-card-title {
+    font-size: 1rem;
+  }
+
+  .report-custom-card-value {
+    font-size: 1.3rem;
+  }
+}

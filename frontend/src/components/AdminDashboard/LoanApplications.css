@@ -1,0 +1,72 @@
+
+.loan-application-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: auto; 
+  margin-bottom: 200px;
+}
+
+.loan-application-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #04188a;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.loan-application-table {
+  width: 100%;
+  border-collapse:collapse;
+  margin-top: 20px;
+  overflow-x: scroll;
+}
+
+.loan-application-table th {
+  background-color: #4f47be; /* Highlighted green color */
+  color: white; /* White text color */
+  font-weight: bold;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  border: 50px 50px 0 0;
+}
+
+.loan-application-table td,
+.loan-application-table th {
+  padding:0 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  /* border: 2px solid red; */
+  height: 50px;
+}
+
+
+.loan-application-table tr:nth-child(even) {
+  background-color: #e6f7ff; /* Light blue for even rows */
+}
+
+
+.loan-application-table tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+.loan-application-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.loan-application-table td:nth-child(1), /* Name */
+.loan-application-table td:nth-child(2), /* Email */
+.loan-application-table td:nth-child(3), /* Phone */
+.loan-application-table td:nth-child(4), /* Age */
+.loan-application-table td:nth-child(5), /* Address */
+.loan-application-table td:nth-child(6), /* Monthly Income */
+.loan-application-table td:nth-child(7), /* Loan Amount */
+.loan-application-table td:nth-child(8) { /* Tenure */
+  word-wrap: break-word;
+}
+
+
+

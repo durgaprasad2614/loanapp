@@ -1,0 +1,272 @@
+
+.welcome-section {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.welcome-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    z-index: -1;
+    /* Ensures video is behind the overlay content */
+}
+
+.content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* Ensures content stays above the video */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: Adds a translucent layer over the video */
+}
+
+.welcome-content {
+    text-align: center;
+    color: #fff;
+    /* Ensures text is readable over the video */
+    z-index: 2;
+    /* Ensures content stays on top */
+}
+
+.welcome-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+/* 4 cards  */
+.home-cards {
+    padding: 2rem 0;
+    margin-top: -32%;
+}
+
+.home-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+/* introduction to loan App  */
+.introduction-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../Images/bg1.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    /* border:2px solid red; */
+    position: relative;
+    padding-bottom: 200px;
+}
+
+
+.introduction-section h2.text-white {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.introduction-section p.text-center {
+    font-size: medium;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #e0e0e0;
+}
+
+
+
+/* 2nd image below content  */
+/* feature section  */
+.card-container{
+    margin-top: -16%;
+    /* border: 2px solid red; */
+    width: 300px;
+}
+.whatSetsUs{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.Read-more{
+    border-radius: 20px;
+    background-color: #007bff;
+    width: 140px;
+    margin-left: 60px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.Read-more:hover{
+    background-color: #003b7a;
+}
+
+.card-container .card img:hover{
+    transform: translate(1.05);
+}
+
+
+/* feature section  */
+.features-section {
+    background: #f9f9f9;
+    /* border: 2px solid red; */
+}
+
+.water-drop-card {
+    position: relative;
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    /* margin: 20px 0; */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    /* Water-drop shape */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.water-drop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.water-drop-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.water-drop-card p {
+    font-size: 1rem;
+    color: #e8f4ff;
+}
+
+.water-drop-card:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon-container {
+    margin-left: 100px;
+    font-size: 3rem;
+    color: #1976d2;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+.card-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #757575;
+}
+
+.home-card .card-title,
+.home-card .card-description {
+    padding: 0 1rem;
+}
+
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 300px;
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* support section  */
+/* Support Section */
+/* Support Card */
+.support-card {
+    background: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .support-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .support-card h5 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .support-card p,
+  .support-card address {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .support-card address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  
+  .support-card i {
+    display: block;
+    margin-bottom: 10px;
+  }
+  

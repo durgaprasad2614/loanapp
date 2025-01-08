@@ -1,0 +1,107 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Navbar */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #4caf50; /* Primary Color */
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding-bottom: 4%;
+  /* border: 2px solid red; */
+
+}
+
+.nav .logo-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo .bi {
+  padding: 10px;
+  margin-left: 20px ;
+  font-size: larger;
+  font-weight: bolder;
+}
+.nav .menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav .menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially off-screen */
+  height: 100%;
+  width: 250px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0; /* Move sidebar into view */
+}
+
+.sidebar .sidebar-content {
+  padding: 20px;
+}
+
+.sidebar .lists {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar .list {
+  margin: 8px 0;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: small;
+  font-weight: 400;
+}
+
+.sidebar .nav-link:hover {
+  background: #4c66af;
+  color: #fff;
+}
+
+.sidebar .nav-link .bi {
+  font-size: large;
+  margin-right: 12px;
+  font-weight: bolder;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+}
+
+
+.toggle-btn.open {
+  left: 20px; /* Move the button into view when clicked */
+}

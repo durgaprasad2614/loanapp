@@ -193,6 +193,3 @@ src/
 Feel free to contribute to this project by creating issues or submitting pull requests. Ensure that your code adheres to the coding standards and is well-documented.
 
 ---
-
-## Contact
-For any inquiries, reach out to **M. Ravikumar Naik** at [ravikumarnaik1015@gmail.com](mailto:ravikumarnaik1015@gmail.com).
